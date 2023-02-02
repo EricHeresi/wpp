@@ -6,3 +6,4 @@ RUN apt-get -y update
 RUN apt-get install -y build-essential
 COPY . .
 RUN make
+RUN apt-get purge -y build-essential
